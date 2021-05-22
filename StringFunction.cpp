@@ -1,3 +1,5 @@
+// STRING FONKSİYONU,STRCPY ve STRLEN
+
 #include <iostream>
 #include <string.h> //C Programlama Dili standart kütüphanesinde yer alan string.h başlık dosyasında karakter dizileri 
 //ile ilgili fonksiyon, veri türü ve makro tanımlamaları içerir. Bu yüzden string.h kütüphanesini kodumuzun doğru 
