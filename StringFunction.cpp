@@ -34,7 +34,7 @@ int main()
     cout << strlen(c) << endl; // stringlenght string in boyutunu döndürür yani boyutu bastırma ile aynı görevi yapmaktadır
     
     char *x = (char *)malloc(sizeof(char)*8); // segmentaion fault hatası verebilir o yüzden boyutunu belirlemek gerekebilir
-    strcpy(x,a); // deep copy - s değişkenini x'e kopyalama işlemini yapar..Yani elimizde bulunan bir 
+    strcpy(x,a); // deep copy a değişkenini x'e kopyalama işlemini yapar..Yani elimizde bulunan bir 
     /*string değişkenini kopyalayarak, başka bir string değişkeni oluşturuyoruz.. Bir değişkeni kopyaladığı 
     için de iki tane değer alır. İlk girilen değer oluşacak kopya iken, ikici girilecek olan değer kopyası 
     oluşturulacak olan string değişkenidir.*/
