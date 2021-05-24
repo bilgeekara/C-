@@ -9,19 +9,18 @@ int main()
     cout << " 12'lik sistemde bir saat giriniz" << endl;
     
     char a[11]; //boyutunu belirtiyoruz
-    cin >> a; //kullanıcıdan alıyoruz
+    cin >> a;
     
-    if (a[8]=='P') { //8.karaktere denk geldiği için. karakter dizisi olduğu için tek tırnak
-        char x[3]; //girilen verilerin ilk üç değerini alıyoruz (değiştirebilmek için)
+    if (a[8]=='P') {
+        char x[3]; // değiştirmek için girilen verilerin ilk üç değerini alıyoruz 
         x[0]=a[0];
         x[1]=a[1];
-        x[2]= '\0';//burda da x dizgisini oluşturduk s nin elemanlarını vererk ve 
+        x[2]= '\0';//burda da x dizgisini oluşturduk a nin elemanlarını vererek ve 
         //bir dizgi olduğu için son karakteri end of string omalı
         
-        /*eğer aşağıdaki saat hesaplamasını yapmak
-         * istemiyorsanız atoi kodunu kullanabilirisiniz kolay yolu olarak
+        /*
         int saat=0;
-        saat += (x[0]-48) *10; x in 0 onlar hanesi .
+        saat += (x[0]-48) *10; x in 0 onlar hanesi 
         saat += x[1]-48; x in biride birler hanesi
         */
         
