@@ -16,12 +16,12 @@ int main()
         x[0]=a[0];
         x[1]=a[1];
         x[2]= '\0';//burda da x dizgisini oluşturduk a nin elemanlarını vererek ve 
-        //bir dizgi olduğu için son karakteri end of string omalı
+        //bir dizgi olduğu için son karakteri end of string olmalı
         
         /*
         int saat=0;
-        saat += (x[0]-48) *10; girilen saatin ilk iki sayısını alarak 48 çıkartıp ascii tablosundanki int karşılığını alıyor ve 10 la çarpıp ekliyor x in 0 onlar hanesi 
-        saat += x[1]-48; burdada aynı işlemi 1 ile çarpıp ekliyor ve doğru sayıyı bulunmuş oluyor
+        saat += (x[0]-48) *10; 
+        saat += x[1]-48; 
         */
         
         int saat= atoi(x); // karakter dizisini alıp integer değere çeviriyor
