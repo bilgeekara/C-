@@ -20,8 +20,8 @@ int main()
         
         /*
         int saat=0;
-        saat += (x[0]-48) *10; x in 0 onlar hanesi 
-        saat += x[1]-48; x in biride birler hanesi
+        saat += (x[0]-48) *10; girilen saatin ilk iki sayısını alarak 48 çıkartıp ascii tablosundanki int karşılığını alıyor ve 10 la çarpıp ekliyor x in 0 onlar hanesi 
+        saat += x[1]-48; burdada aynı işlemi 1 ile çarpıp ekliyor ve doğru sayıyı bulunmuş oluyor
         */
         
         int saat= atoi(x); // karakter dizisini alıp integer değere çeviriyor
