@@ -15,27 +15,23 @@ int main()
     
     char *x,*y;
     x=a; //dizginin en başından başlaması için
-    y=a; /* dizginin en sonundan başlaması için bir 
-     * while döngüsü atamamız gerekiyor. Döngü end of string kodunu
-     * görene kadar ilerleyecek. 
-     * Böylelikle y işaretçisi kelimenin en sonundan başlamış olacak */
-     
+    y=a; // dizginin en sonundan başlaması için bir while döngüsü atamamız gerekiyor. Döngü end of string kodunugörene kadar ilerleyecek. 
+         
 while(*y!='\0') { //y'nun gösterdiği yerdeki değere bakmamız gerektiği için işaretçi kullanıyoruz
-        y++;
+        y++; //diğer harflere geçmeleri için 
         }
-    y--; //en son eleman \0 olduğu için bir geri gelmesini sağlıyoruz
+    y--; //en son eleman \0 olduğu için 
     
-    bool palindrome=true; //ilk başta tüm kelimeleri palindrome kabul ediyoruz
+    bool palindrome=true; //ilk başta tüm kelimeleri true diyoruz.
     
-    while (y>x) { //x ve y birbirine eşit olmadığı zaman (ortada karşılaşmadıklarında)
+    while (y>x) { //x ve y birbirine eşit olmadığı zaman durumunu gösterebilmek için
         
-        if(*x!=*y) { // değerleri karşılaştırmak için işsaretçileri bu şekilde yazdık 
+        if(*x!=*y) { // değerleri karşılaştırmak için işaretçileri bu şekilde yazdık 
         palindrome=false; //eğer bir tane bile farklı eleman bulursak false döndürüyoruz
         }
-        x++; //diğer harflere geçmeleri için 
+        x++; 
         y--;
         }
-    //sonuçları ekrana yansıtmak için
     if (palindrome) 
         cout << "Girilen kelime bir palindrome'dur" << endl;
     else 
